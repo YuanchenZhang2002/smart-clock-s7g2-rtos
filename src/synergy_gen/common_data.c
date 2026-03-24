@@ -291,8 +291,8 @@ const display_instance_t g_display =
 
 /** JPEG Work Buffer */
 #if GX_USE_SYNERGY_JPEG
-            #if (81920)
-            uint8_t g_sf_el_gx_jpegbuffer[81920] BSP_ALIGN_VARIABLE_V2(64) BSP_PLACE_IN_SECTION_V2(".bss");
+            #if (100)
+            uint8_t g_sf_el_gx_jpegbuffer[100] BSP_ALIGN_VARIABLE_V2(64) BSP_PLACE_IN_SECTION_V2(".bss");
             #endif
             #endif
 
@@ -349,7 +349,7 @@ static const sf_el_gx_cfg_t g_sf_el_gx_cfg =
   /* JPEG Work Buffer Configuration */
 #if GX_USE_SYNERGY_JPEG
                 .p_jpegbuffer    = g_sf_el_gx_jpegbuffer,
-                .jpegbuffer_size = 81920,
+                .jpegbuffer_size = 100,
                 .p_sf_jpeg_decode_instance = (void *)&g_sf_jpeg_decode0,
             #else
   .p_jpegbuffer = NULL,

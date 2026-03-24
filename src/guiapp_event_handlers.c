@@ -161,20 +161,24 @@ UINT WindowScreenEventHandler(GX_WINDOW *widget, GX_EVENT *event_ptr)
     return result;
 }
 
+
 UINT WindowScreen2EventHandler(GX_WINDOW *widget, GX_EVENT *event_ptr)
 {
-    UINT result = gx_window_event_process(widget, event_ptr);
-
-    switch (event_ptr->gx_event_type){
-        case GX_EVENT_PEN_UP:
-            show_window((GX_WINDOW*)&window_screen, (GX_WIDGET*)widget, true);
-            break;
-        default:
-            result = gx_window_event_process(widget, event_ptr);
-            break;
-    }
-    return result;
+    return gx_window_event_process(widget, event_ptr);
+//    UINT result = gx_window_event_process(widget, event_ptr);
+//
+//    switch (event_ptr->gx_event_type){
+//        case GX_EVENT_PEN_UP:
+//            show_window((GX_WINDOW*)&window_screen, (GX_WIDGET*)widget, true);
+//            break;
+//        default:
+//            result = gx_window_event_process(widget, event_ptr);
+//            break;
+//    }
+//    return result;
 }
+
+/*
 
 static UINT show_window(GX_WINDOW * p_new, GX_WIDGET * p_widget, bool detach_old)
 {
@@ -203,6 +207,7 @@ static UINT show_window(GX_WINDOW * p_new, GX_WIDGET * p_widget, bool detach_old
     return err;
 }
 
+
 static void update_text_id(GX_WIDGET * p_widget, GX_RESOURCE_ID id, UINT string_id)
 {
     GX_PROMPT * p_prompt = NULL;
@@ -214,3 +219,4 @@ static void update_text_id(GX_WIDGET * p_widget, GX_RESOURCE_ID id, UINT string_
     }
 }
 
+*/

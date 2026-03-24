@@ -656,7 +656,7 @@ Synergy Configuration
         Display Driver Configuration Inheritance: Inherit Graphics Screen 1
         Name of User Callback function: NULL
         GUIX Canvas Buffer (required only if rotation angle is FLIP or 180 degree): Not used
-        Size of JPEG Work Buffer (valid if JPEG hardware acceleration enabled): 81920
+        Size of JPEG Work Buffer (valid if JPEG hardware acceleration enabled): 100
         Memory section for GUIX Canvas Buffer: sdram
         Memory section for JPEG Work Buffer: bss
         D/AVE 2D Frame Buffer Cache(Valid if D/AVE 2D Drawing Engine is enabled): Enable (Default)

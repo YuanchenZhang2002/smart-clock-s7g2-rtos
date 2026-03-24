@@ -846,7 +846,7 @@
       <property id="module.framework.sf_el_gx.display_cfg_inheritance" value="module.framework.sf_el_gx.display_cfg_inheritance.layer1"/>
       <property id="module.framework.sf_el_gx.p_callback" value="NULL"/>
       <property id="module.framework.sf_el_gx.p_canvas.used" value="module.framework.sf_el_gx.p_canvas.used.false"/>
-      <property id="module.framework.sf_el_gx.jpegbuffer_size" value="81920"/>
+      <property id="module.framework.sf_el_gx.jpegbuffer_size" value="100"/>
       <property id="module.framework.sf_el_gx.canvas_section" value="sdram"/>
       <property id="module.framework.sf_el_gx.jpegWB_section" value="bss"/>
       <property id="module.framework.sf_el_gx.dave2d_buffer_cache" value="module.framework.sf_el_gx.dave2d_buffer_cache.enable"/>
